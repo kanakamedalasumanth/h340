@@ -1,22 +1,8 @@
 /*
  *
  * H340 HDD LED Driver
- * Copyright (C) 2012  Payden Sutherland
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- */
+
 
 #include <linux/module.h>
 #include <linux/kernel.h>
@@ -28,8 +14,8 @@
 #include <linux/genhd.h>
 #include <asm/io.h>
 
-#define DRIVER_AUTHOR "Payden Sutherland <payden@paydensutherland.com>"
-#define DRIVER_DESC "H340 HDD LED driver, that's a lot of acronyms"
+#define DRIVER_AUTHOR "Sumanth<weare@live.in>"
+#define DRIVER_DESC "H340 HDD LED driver"
 
 #define H340_BASE 0x800
 #define H340_GP1 0x4b
@@ -37,7 +23,7 @@
 #define KTHREAD_NAME "h340d"
 #define SAMPLE_RATE 50
 
-/* these aren't used but they tell me which bits do what.
+
 #define HD1_RED 1 << 7
 #define HD1_BLUE 1 << 6
 #define HD2_RED 1 << 3
